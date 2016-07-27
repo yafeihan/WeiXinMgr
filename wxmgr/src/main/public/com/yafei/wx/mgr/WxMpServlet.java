@@ -21,6 +21,8 @@ import me.chanjar.weixin.mp.bean.WxMpXmlOutTextMessage;
 
 public class WxMpServlet extends HttpServlet {
 
+    private static final long serialVersionUID = 643368051827698299L;
+
     protected WxMpInMemoryConfigStorage config;
     protected WxMpService wxMpService;
     protected WxMpMessageRouter wxMpMessageRouter;
