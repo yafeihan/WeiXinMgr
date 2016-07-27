@@ -1,1 +1,10 @@
+*.class
+*.keep
+**/bin/
+**/out/
+**/classes/
+/bin
+.project
+.classpath
 /.settings
+.gitignore
