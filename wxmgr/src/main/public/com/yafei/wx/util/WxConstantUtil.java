@@ -16,6 +16,7 @@ public class WxConstantUtil {
     public static String APPID = null;
     public static String APPSECRET = null;
     public static String TOKEN = null;
+    public static String AESKEY = null;
 
     private WxConstantUtil() {
 
@@ -48,6 +49,12 @@ public class WxConstantUtil {
                 TOKEN = (String) properties.get("TOKEN").trim();
             } else {
                 // log.warn("Œ¥≈‰÷√TOKEN");
+            }
+
+            if (properties.containsKey("AESKEY")) {
+                AESKEY = (String) properties.get("AESKEY").trim();
+            } else {
+                // log.warn("Œ¥≈‰÷√AESKEY");
             }
 
         } catch (Exception e) {
