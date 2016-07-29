@@ -19,6 +19,8 @@ import me.chanjar.weixin.mp.bean.WxMpXmlMessage;
 import me.chanjar.weixin.mp.bean.WxMpXmlOutMessage;
 import me.chanjar.weixin.mp.bean.WxMpXmlOutTextMessage;
 
+import com.yafei.wx.util.WxConstantUtil;
+
 public class WxMpServlet extends HttpServlet {
 
     private static final long serialVersionUID = 643368051827698299L;
@@ -32,10 +34,10 @@ public class WxMpServlet extends HttpServlet {
         super.init();
 
         config = new WxMpInMemoryConfigStorage();
-        config.setAppId("..."); // 设置微信公众号的appid
-        config.setSecret("..."); // 设置微信公众号的app corpSecret
-        config.setToken("..."); // 设置微信公众号的token
-        config.setAesKey("..."); // 设置微信公众号的EncodingAESKey
+        config.setAppId(WxConstantUtil.APPID); // 设置微信公众号的appid
+        config.setSecret(WxConstantUtil.APPSECRET); // 设置微信公众号的app corpSecret
+        config.setToken(WxConstantUtil.TOKEN); // 设置微信公众号的token
+        config.setAesKey(WxConstantUtil.AESKEY); // 设置微信公众号的EncodingAESKey
 
         wxMpService = new WxMpServiceImpl();
         wxMpService.setWxMpConfigStorage(config);
