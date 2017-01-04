@@ -35,7 +35,7 @@ public class WxMpServlet extends HttpServlet {
 
         config = new WxMpInMemoryConfigStorage();
         config.setAppId(WxConstantUtil.APPID); // 设置微信公众号的appid
-        config.setSecret(WxConstantUtil.APPSECRET); // 设置微信公众号的app corpSecret APPSECRET
+        config.setSecret(WxConstantUtil.APPSECRET); // 设置微信公众号的app corpSecret APPSECRET1
         config.setToken(WxConstantUtil.TOKEN); // 设置微信公众号的token
         config.setAesKey(WxConstantUtil.AESKEY); // 设置微信公众号的EncodingAESKey
 
